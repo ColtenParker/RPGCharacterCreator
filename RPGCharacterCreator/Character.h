@@ -7,10 +7,19 @@ protected:
 	std::string name;
 	int level;
 	int health;
-	int mana;
+
+	struct Stats
+	{
+		int strength;
+		int dexterity;
+		int constitution;
+		int intelligence;
+		int wisdom;
+		int charisma;
+	};
 
 public:
-	Character(const std::string& name);
+	Character(const std::string& name, int level, int health);
 
 	virtual void Attack() = 0;
 	virtual void DisplayStats() const;
