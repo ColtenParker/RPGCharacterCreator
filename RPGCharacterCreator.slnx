@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="RPGCharacterCreator/RPGCharacterCreator.vcxproj" />
+  <Project Path="RPGCharacterCreator/RPGCharacterCreator.vcxproj" Id="c37e3fd7-f02c-464f-a97c-6804d2d64fd8" />
 </Solution>

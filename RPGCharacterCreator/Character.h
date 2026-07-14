@@ -1,25 +1,18 @@
 #pragma once
+#include "Stats.h"
 #include <string>
+#include <iostream>
 
 class Character
 {
 protected:
 	std::string name;
-	int level;
-	int health;
-
-	struct Stats
-	{
-		int strength;
-		int dexterity;
-		int constitution;
-		int intelligence;
-		int wisdom;
-		int charisma;
-	};
+	int maxHealth;
+	Stats stats;
+	
 
 public:
-	Character(const std::string& name, int level, int health);
+	Character(const std::string& name, int maxHealth, Stats stats);
 
 	virtual void Attack() = 0;
 	virtual void DisplayStats() const;

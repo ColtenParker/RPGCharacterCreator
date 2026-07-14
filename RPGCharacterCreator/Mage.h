@@ -5,16 +5,19 @@
 class Mage :
     public Character
 {
-	Stats stats = { 8, 16, 14, 16, 10, 10 };
-	int maxHealth = getMaxHealth(stats.constitution);
 
 public:
-	Mage(std::string& name, int level, int health, int maxHealth) : Character(name, level, health), maxHealth(maxHealth) {}
+	Mage(const std::string& name) : Character(name, maxHealth, stats) {
+		Character::maxHealth = 80;
+		Character::stats = { 8, 12, 16 };
+		std::cout << "Mage " << name << " created" << std::endl;
+	};
 	
 	void Attack() override {
 		std::cout << name << " casts fireball!" << std::endl;
 	};
 
-	int getMaxHealth(int consitution);
+	
+
 };
 
