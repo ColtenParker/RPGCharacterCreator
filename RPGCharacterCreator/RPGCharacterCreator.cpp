@@ -9,7 +9,7 @@ using namespace std;
 
 int main()
 {
-    cout << "RPG Character Creator" << endl << endl;
+	cout << "RPG Character Creator" << endl << endl;
 	Mage gandalf("Gandalf");
 	gandalf.DisplayStats();
 	gandalf.Attack();

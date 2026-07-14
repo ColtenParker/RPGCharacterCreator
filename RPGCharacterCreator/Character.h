@@ -8,6 +8,7 @@ protected:
 	std::string name;
 	int maxHealth;
 	Stats stats;
+	int currentHealth;
 
 
 public:
