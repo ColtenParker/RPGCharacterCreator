@@ -17,8 +17,6 @@ public:
 	virtual void Attack() = 0;
 	virtual void DisplayStats() const;
 
-	void getCurrentHealth() const;
-
 	void TakeDamage(int damage);
 	void Heal(int amount);
 	bool IsAlive() const;

@@ -24,9 +24,11 @@ int main()
 
 	legolas.TakeDamage(30);
 	legolas.Heal(20);
-	legolas.IsAlive();
+	if (legolas.IsAlive()){
+		cout << "legolas is alive." << endl;
+	}
 
-	legolas.getCurrentHealth();
+
 
 	return 0;
 }

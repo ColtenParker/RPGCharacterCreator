@@ -16,15 +16,8 @@ void Character::DisplayStats() const
 	std::cout << "Intelligence: " << stats.intelligence << std::endl;
 }
 
-void Character::getCurrentHealth() const
-{
-	std::cout << "Current Health: " << currentHealth << "/" << maxHealth << std::endl;
-}
-
 void Character::TakeDamage(int damage)
 {
-	int temp = currentHealth;
-
 	if (currentHealth <= 0)
 	{
 		std::cout << name << " is already dead and cannot take more damage." << std::endl;
@@ -43,12 +36,11 @@ void Character::TakeDamage(int damage)
 		currentHealth = 0;
 	}
 
-	std::cout << name << " took " << (temp - currentHealth) << " damage." << std::endl;
+
 }
 
 void Character::Heal(int amount)
 {
-	int temp = currentHealth;
 	
 	if (currentHealth <= 0)
 	{
@@ -67,8 +59,6 @@ void Character::Heal(int amount)
 	{
 		currentHealth = maxHealth;
 	}
-
-	std::cout << name << " healed for " << (currentHealth - temp) << " health." << std::endl;
 }
 
 bool Character::IsAlive() const
