@@ -1,7 +1,9 @@
 #include <iostream>
 #include <string>
-#include "Mage.h"
 #include "Character.h"
+#include "Mage.h"
+#include "Warrior.h"
+#include "Rogue.h"
 
 using namespace std;
 
@@ -11,6 +13,15 @@ int main()
 	Mage gandalf("Gandalf");
 	gandalf.DisplayStats();
 	gandalf.Attack();
+
+	Warrior aragorn("Aragorn");
+	aragorn.DisplayStats();
+	aragorn.Attack();
+
+	Rogue legolas("Legolas");
+	legolas.DisplayStats();
+	legolas.Attack();
+
 	return 0;
 }
 

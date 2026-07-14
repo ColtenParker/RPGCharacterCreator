@@ -1,12 +1,12 @@
 #pragma once
 #include "Character.h"
 
-class Mage :
+class Rogue :
 	public Character
 {
 
 public:
-	Mage(const std::string& name);
+	Rogue(const std::string& name);
 
 	void Attack() override;
 

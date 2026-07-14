@@ -1,7 +1,6 @@
 #pragma once
 #include "Stats.h"
 #include <string>
-#include <iostream>
 
 class Character
 {
@@ -9,7 +8,7 @@ protected:
 	std::string name;
 	int maxHealth;
 	Stats stats;
-	
+
 
 public:
 	Character(const std::string& name, int maxHealth, Stats stats);
