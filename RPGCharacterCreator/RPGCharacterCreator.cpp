@@ -22,6 +22,12 @@ int main()
 	legolas.DisplayStats();
 	legolas.Attack();
 
+	legolas.TakeDamage(30);
+	legolas.Heal(20);
+	legolas.IsAlive();
+
+	legolas.getCurrentHealth();
+
 	return 0;
 }
 
